@@ -108,7 +108,7 @@ const a = 1;
 提示容器
 
 :::
-
+git config --global http.version HTTP/1.1
 ::: warning 自定义标题
 
 警告容器
