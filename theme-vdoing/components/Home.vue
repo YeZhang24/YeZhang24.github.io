@@ -145,11 +145,7 @@
           :categoriesData="$categoriesAndTags.categories"
           :length="10"
         />
-        <TagsBar
-          v-if="$themeConfig.tag !== false && $categoriesAndTags.tags.length"
-          :tagsData="$categoriesAndTags.tags"
-          :length="30"
-        />
+       
         <div
           class="custom-html-box card-box"
           v-if="homeSidebarB"
@@ -170,7 +166,6 @@ import UpdateArticle from '@theme/components/UpdateArticle'
 import Pagination from '@theme/components/Pagination'
 import BloggerBar from '@theme/components/BloggerBar'
 import CategoriesBar from '@theme/components/CategoriesBar'
-import TagsBar from '@theme/components/TagsBar'
 
 const MOBILE_DESKTOP_BREAKPOINT = 720 // refer to config.styl
 
@@ -237,7 +232,7 @@ export default {
       };
     }
   },
-  components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination },
+  components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, Pagination },
   created () {
     this.total = this.$sortPosts.length
   },
