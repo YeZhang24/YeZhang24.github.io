@@ -1,5 +1,5 @@
 const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
-const htmlModules = require('./config/htmlModules.js');
+
 
 module.exports = {
   theme: 'vdoing', // 使用npm包主题
@@ -186,7 +186,7 @@ module.exports = {
     },
 
     // 插入hmtl(广告)模块
-    htmlModules
+  
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]

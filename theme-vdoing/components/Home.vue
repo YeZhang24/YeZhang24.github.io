@@ -201,8 +201,7 @@ export default {
       return !!(this.homeData.features && this.homeData.features.length)
     },
     homeSidebarB () {
-      const { htmlModules } = this.$themeConfig
-      return htmlModules ? htmlModules.homeSidebarB : ''
+    
     },
     showBanner () { // 当分页不在第一页时隐藏banner栏
       return this.$route.query.p

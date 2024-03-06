@@ -95,15 +95,7 @@ export default {
   },
   methods: {
     getShowStatus(prop) {
-      const { htmlModules } = this.$themeConfig
-      if(!htmlModules) return false
-      if (htmlModules[prop] === 'article') { // 仅文章页显示
-        return this.isArticle()
-      } else if (htmlModules[prop] === 'custom'){ // 仅自定义页显示
-        return !(this.isArticle())
-      } else { // 全部显示
-        return true
-      }
+    
     },
     isArticle () {
       return this.$frontmatter.article !== false
