@@ -32,7 +32,6 @@ article: false
 ---`
   } else if (page.indexOf('tags') > -1) {
     content = `---
-tagsPage: true
 title: 标签
 permalink: /tags/
 article: false

@@ -41,8 +41,7 @@
     <!-- 分类页 -->
     <CategoriesPage v-else-if="$page.frontmatter.categoriesPage" />
 
-    <!-- 标签页 -->
-    <TagsPage v-else-if="$page.frontmatter.tagsPage" />
+
 
     <!-- 归档页 -->
     <ArchivesPage v-else-if="$page.frontmatter.archivesPage" />
@@ -100,7 +99,7 @@ import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import CategoriesPage from '@theme/components/CategoriesPage.vue'
-import TagsPage from '@theme/components/TagsPage.vue'
+
 import ArchivesPage from '@theme/components/ArchivesPage.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import Buttons from '@theme/components/Buttons.vue'
@@ -114,7 +113,7 @@ const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
 const NAVBAR_HEIGHT = 58 // 导航栏高度
 
 export default {
-  components: { Home, Navbar, Page, CategoriesPage, TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
+  components: { Home, Navbar, Page, CategoriesPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
 
   data() {
     return {

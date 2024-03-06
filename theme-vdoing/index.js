@@ -45,12 +45,7 @@ module.exports = (options, ctx) => {
     deletePage(sourceDir, 'categoriesPage')
   }
 
-  // 标签页
-  if (themeConfig.tag !== false) {
-    createPage(sourceDir, 'tagsPage')
-  } else {
-    deletePage(sourceDir, 'tagsPage')
-  }
+ 
 
   // 归档页
   if (themeConfig.archive !== false) {
